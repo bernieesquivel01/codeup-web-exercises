@@ -15,7 +15,18 @@
 
 // alert ("The user had " + userLunch + "for lunch!")
 
-alert("Welcome to my Website!")
+alert("Welcome to my Website!");
 
 var userInput = prompt ("What's your favorite color?");
-alert(" Great, blue is my favorite color too!")
+alert(" Great, " + userInput + " is my favorite color too!");
+
+var LittleMermaid = prompt ("How many days have you had the Little Mermaid?");
+alert("Awesome! You owe: " + (LittleMermaid * 3));
+
+var BrotherBear = prompt ("How many days have you had Brother Bear?");
+alert("Great! That'll be: " + (BrotherBear * 3));
+
+var Hercules = prompt ("How many days have you had Hercules?");
+alert("That'll be: " + (Hercules * 3));
+
+alert("Your total is: " + (LittleMermaid, BrotherBear, Hercules));
