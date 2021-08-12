@@ -23,10 +23,12 @@ alert(" Great, " + userInput + " is my favorite color too!");
 var LittleMermaid = prompt ("How many days have you had the Little Mermaid?");
 alert("Awesome! You owe: " + (LittleMermaid * 3));
 
-var BrotherBear = prompt ("How many days have you had Brother Bear?");
+var BrotherBear = prompt ("How many days have you had BrotherBear?");
 alert("Great! That'll be: " + (BrotherBear * 3));
 
 var Hercules = prompt ("How many days have you had Hercules?");
 alert("That'll be: " + (Hercules * 3));
 
-alert("Your total is: " + (LittleMermaid, BrotherBear, Hercules));
+
+//A prompt: will return a string. . either: a. we need to PARSE the string into a number OR we could multiply all of our variables furst
+alert("Your total for all three movies is: " (LittleMermaid * 3)+(BrotherBear * 3)+(Hercules * 3));
