@@ -1,7 +1,7 @@
-"use strict";
+//"use strict";
 
-console.log("Hello from External JS!")
-var myStr = true;
+// console.log("Hello from External JS!")
+//var myStr = true;
 
 // console.log(myStr)
 
@@ -11,6 +11,11 @@ var myStr = true;
 
 // alter("The user selected: " + userConfirm)
 
-var userLunch = prompt (message: "What did you have for lunch?")
+// var userLunch = prompt (message: "What did you have for lunch?")
 
-alert ("The user had " + userLunch + "for lunch!")
+// alert ("The user had " + userLunch + "for lunch!")
+
+alert("Welcome to my Website!")
+
+var userInput = prompt ("What's your favorite color?");
+alert(" Great, blue is my favorite color too!")
