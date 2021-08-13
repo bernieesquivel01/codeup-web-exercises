@@ -31,4 +31,20 @@ alert("That'll be: " + (Hercules * 3));
 
 
 //A prompt: will return a string. . either: a. we need to PARSE the string into a number OR we could multiply all of our variables furst
-alert("Your total for all three movies is: " (LittleMermaid * 3)+(BrotherBear * 3)+(Hercules * 3));
+alert("Your total for all three movies is: " + (LittleMermaid*3+BrotherBear*3+Hercules*3));
+
+var Google = 400
+var Amazon = 380
+var Facebook = 350
+
+var GooglePaycheck = prompt ("How many hours did you work at Google?");
+alert("You made " +GooglePaycheck*Google+ " at Google!");
+
+var AmazonPaycheck = prompt ("How many hours did you work at Amazon?");
+alert("You made " +AmazonPaycheck*Amazon+ " at Amazon!");
+
+var FacebookPaycheck = prompt ("How many hours did you work at Facebook?");
+alert("You made " +FacebookPaycheck*Facebook+ " at Facebook!");
+
+alert ("Your total pay for the week is: " + (GooglePaycheck*Google+AmazonPaycheck*Amazon+FacebookPaycheck*Facebook));
+
