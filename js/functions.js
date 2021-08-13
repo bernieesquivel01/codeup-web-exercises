@@ -92,6 +92,8 @@ function calculateTip(x, y){
 console.log(calculateTip(.20,20));
 console.log(calculateTip(.25,25.50));
 console.log(calculateTip(.15,33.42));
+console.log(calculateTip(.5, 30));
+
 
 /**
  * TODO:
@@ -100,9 +102,10 @@ console.log(calculateTip(.15,33.42));
  * then display the dollar amount they should tip
  */
 
-alert ("If you're done, here's your bill!")
-var bill = prompt ("How much was your bill?")
-var tip = prompt ("What percentage would you like to tip?")
+alert ("If you're done, here's your bill!");
+var bill = prompt ("How much was your bill?");
+var percentage = prompt ("What percentage would you like to tip?");
+alert ("Your tip should be " + (calculateTip(percentage,bill)));
 
 
 
@@ -116,11 +119,20 @@ var tip = prompt ("What percentage would you like to tip?")
  *
  * Example:
  * > var originalPrice = 100;
- * > var dicountPercent = .2; // 20%
- * > applyDiscount(originalPrice, dicountPercent) // 80
+ * > var discountPercent = .2; // 20%
+ * > applyDiscount(originalPrice, discountPercent) // 80
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
-function applyDiscount(x, y){
-    return x - y
+function applyDiscount(OrigPrice,Discount){
+    //var OrigPrice = "100"
+    //var Discount = ".2"
+    return OrigPrice - (OrigPrice*Discount);
 }
+
+console.log(applyDiscount(100,.2));
+console.log(applyDiscount(80,.2));
+console.log(applyDiscount(10,.5));
+
+
+
