@@ -20,6 +20,8 @@ alert("Welcome to my Website!");
 var userInput = prompt ("What's your favorite color?");
 alert(" Great, " + userInput + " is my favorite color too!");
 
+//Exercise 3 JavaScript with HTML
+
 var LittleMermaid = prompt ("How many days have you had the Little Mermaid?");
 alert("Awesome! You owe: " + (LittleMermaid * 3));
 

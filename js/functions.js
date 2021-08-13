@@ -8,6 +8,7 @@
  * Example
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
+//First thing: I know I need a function
 
 function sayHello(name){
     //var name = "Bernie";
@@ -85,8 +86,8 @@ console.log(isTwo(1));
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-function calculateTip(x, y){
-    return x * y;
+function calculateTip(tipPercentage, total){
+    return tipPercentage * total;
 }
 
 console.log(calculateTip(.20,20));
@@ -104,9 +105,10 @@ console.log(calculateTip(.5, 30));
 
 alert ("If you're done, here's your bill!");
 var bill = prompt ("How much was your bill?");
-var percentage = prompt ("What percentage would you like to tip?");
-alert ("Your tip should be " + (calculateTip(percentage,bill)));
-
+var percentage = prompt ("What percentage would you like to tip?") / 100;
+//adding the "/ 100" will allow user to type in whole number and convert to decimal/percentage.
+//or percentage = percentage / 100; would do the samething.
+alert ("Your tip should be $" + (calculateTip(percentage,bill)));
 
 
 
@@ -133,6 +135,8 @@ function applyDiscount(OrigPrice,Discount){
 console.log(applyDiscount(100,.2));
 console.log(applyDiscount(80,.2));
 console.log(applyDiscount(10,.5));
+console.log(applyDiscount(10,.5));
+console.log(applyDiscount(500,.35));
 
 
 
