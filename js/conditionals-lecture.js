@@ -83,3 +83,23 @@ function trafficColor(){
  }
 }
 
+//Switch Statement;
+
+ var userTrafficLight = prompt ("What color is our traffic light?")
+
+     userTrafficLight = userTrafficLight.toLowerCase();
+
+switch (userTrafficLight){
+ case "red":
+  alert ("Stop!");
+  break;
+ case "yellow":
+  alert ("Slow Down!");
+  break;
+ case "green":
+  alert ("Green Light, continue through the intersection!");
+  break;
+ default:
+  alert ("Uh oh, be aware of your surroundings if the traffic light isn't working!");
+  break;
+}
