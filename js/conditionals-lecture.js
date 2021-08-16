@@ -14,7 +14,7 @@ if (isSunny && haveSunscreen){
 //if (condition){
  // code here rus if condition evaluates to true;
 //}else if (condition2){
- //code here runs if condition1 is false *and* condition evaluates to true;
+ //code here runs if condition1 is false *and* condition2 evaluates to true;
 //}else {
  //code here gets executed if condition1 nor condition2 evaluate to true;
 //}
@@ -30,5 +30,56 @@ if (isSunny && haveSunscreen){
  alert ("Ahh man, be careful! It's a sunny day out there!");
 } else {
  alert ("Well, hopefully it's not too sunny for you out there overall and you'll be alright!");
+}
+
+//If, else-if, else w/ strings
+
+var trafficlight;
+
+//if(trafficlight === "red"){
+// alert ("Stop!")
+//} else if (trafficlight === "yellow"){
+// alert ("Slow Down");
+//} else if (trafficlight === "green"){
+// alert ("Green light, continue through following the other laws of the road!");
+//} else {
+// alter ("Uh oh, be aware of your surroundings if the traffic light looks a little off!");
+//}
+
+//turning it into a function
+function trafficColor(){
+  var userTrafficLight = prompt ("What color is our traffic light?")
+
+ if(userTrafficLight.toLowerCase() === "red"){
+  alert ("Stop!")
+ } else if (userTrafficLight.toLowerCase() === "yellow"){
+  alert ("Slow Down");
+ } else if (userTrafficLight.toLowerCase() === "green"){
+  alert ("Green light, continue through following the other laws of the road!");
+ } else {
+  alert ("Uh oh, be aware of your surroundings if the traffic light looks a little off!");
+ }
+}
+
+trafficColor();
+
+
+//Nested Example
+function trafficColor(){
+ var userTrafficLight = prompt ("What color is our traffic light?")
+ var isBlinking = confirm("Uh oh, is the red light blinking?")
+ if(userTrafficLight.toLowerCase() === "red"){
+  if(isBlinking){
+   //Nested conditional to trigger IF condition 1 is true, AND the condition is true
+     alert("If the red light is blinking, treat it like a stop sign and be cautious!")
+  }
+  alert ("Stop!")
+ } else if (userTrafficLight.toLowerCase() === "yellow"){
+  alert ("Slow Down");
+ } else if (userTrafficLight.toLowerCase() === "green"){
+  alert ("Green light, continue through following the other laws of the road!");
+ } else {
+  alert ("Uh oh, be aware of your surroundings if the traffic light looks a little off!");
+ }
 }
 
