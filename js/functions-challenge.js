@@ -143,15 +143,50 @@ console.log(multiply(7,3));
 console.log(multiply(8,3));
 
 //Write a divide(numerator, denominator) function that returns a divided by b
+function divide(numerator, denominator){
+    return numerator/denominator;
+}
 
+console.log(divide(20,5));
+console.log(divide(25,10));
+console.log(divide(100,10));
 
 //Write a remainder(number,divisor) function that returns the remainder left over when dividing number by the divisor
+function remainder(number, divisor){
+    return number % divisor;
+}
+
+console.log(remainder(4,3));
+console.log(remainder(9,2));
+console.log(remainder(11,3));
 
 
 //Write the function square(a) that takes in a number and returns the number multiplied by itself
+function square(a){
+    return a * a;
+}
+
+console.log(square(10));
+console.log(square(5));
+console.log(square(2));
 
 
 //Write a function called sumOfSquares(a,b) that uses only your add() function and your square function and not + or * operators
+function sumOfSquares(a,b){
+    var squareA = square(a);
+    var squareB = square(b);
+    return add(squareA,squareB);
+}
+
+console.log(sumOfSquares(2,3));
+console.log(sumOfSquares(5,2));
 
 
 //Write a function called doMath(operator, a, b) that takes 3 parameters. The first parameter is the name of the math function you want to apply. a and b are the two numbers to run that function on
+function doMath(operator, a, b){
+    return operator (a,b);
+}
+
+console.log(doMath (add, 4,4));
+console.log(doMath(subtract, 100, 10));
+console.log(doMath(divide, 20, 5));
