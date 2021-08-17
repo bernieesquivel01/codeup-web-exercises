@@ -60,6 +60,18 @@ alert("You made " +FacebookPaycheck*Facebook+ " at Facebook!");
 alert ("Your total pay for the week is: " + (GooglePaycheck*Google+AmazonPaycheck*Amazon+FacebookPaycheck*Facebook));
 
 
+var SeatsAvailable = prompt ("Does this class have available seats? (Yes/No)");
+console.log("seats are available" + SeatsAvailable);
+var ScheduleConflict = prompt ("Does class conflict with current schedule? (Yes/No)");
+console.log("no conflicts" + ScheduleConflict);
+
+if (SeatsAvailable === "Yes" && ScheduleConflict === "No"){
+    canEnroll = true;
+    alert ("Congrats! You can enroll.");
+} else {
+    alert ("Sorry, can't enroll at this time!");
+}
+
 //productQuantity > 2 || !offerExpired
 //premiumMem === true, offer still needs to be valid
 
