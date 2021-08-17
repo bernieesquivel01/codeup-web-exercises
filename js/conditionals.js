@@ -21,21 +21,21 @@ console.log("Conditional Exercises!");
  * console.logging the function's return value
  */
 
-function analyzeColor(color){
-    if (color === "red"){
-        return "Strawberries are " + color;
-    } else if (color === "orange"){
-        return "Oranges are " + color;
-    } else if (color === "yellow"){
-        return "Bananas are " + color;
-    } else {
-        return color + "is not a defined color!";
-    }
-}
+//function analyzeColor(color){
+//    if (color === "red"){
+//        return "Strawberries are " + color;
+//    } else if (color === "orange"){
+//        return "Oranges are " + color;
+//    } else if (color === "yellow"){
+//        return "Bananas are " + color;
+//    } else {
+//        return color + " is not a defined color!";
+//    }
+//}
 
-console.log(analyzeColor("red"));
-console.log(analyzeColor("Black"));
-
+//console.log(analyzeColor("red"));
+//console.log(analyzeColor("Black"));
+//console.log(analyzeColor("yellow"));
 
 
 // Don't change the next two lines!
@@ -51,11 +51,11 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * You should see a different message every time you refresh the page
  */
 
-analyzeColor(randomColor);
-
-console.log(analyzeColor("black"));
-console.log(analyzeColor("blue"));
-console.log(analyzeColor("tan"));
+//analyzeColor(randomColor)
+//console.log(analyzeColor("black"));
+//console.log(analyzeColor("blue"));
+//console.log(analyzeColor("tan"));
+//console.log(analyzeColor("yellow"));
 
 
 /**
@@ -63,34 +63,39 @@ console.log(analyzeColor("tan"));
  * Refactor your above function to use a switch-case statement
  */
 
-function analyzeColor(color) {
-    switch (color) {
-        case "red":
-            alert("Strawberries are red");
-            break;
-        case "orange":
-            alert("Oranges are orange");
-            break;
-        case "yellow":
-            alert("Bananas are yellow");
-            break;
-        case "green":
-            alert("Apples are green");
-            break;
-        case "blue":
-            alert("blue is the color of the sky");
-            break;
-        case "indigo":
-            alert("Ken's shoes are indigo");
-            break;
-        case "violet":
-            alert("Blueberries are violet");
-            break;
-        default:
-            alert("Sorry, " + color + " is not a defined color!");
-            break;
-    }
-}
+//function analyzeColor(color) {
+//   switch (color) {
+//       case "red":
+//           alert("Strawberries are red");
+//           break;
+//       case "orange":
+//           alert("Oranges are orange");
+//           break;
+//       case "yellow":
+//           alert("Bananas are yellow");
+//           break;
+//       case "green":
+//            alert("Apples are green");
+//            break;
+//        case "blue":
+//            alert("blue is the color of the sky");
+//            break;
+//        case "indigo":
+//            alert("Ken's shoes are indigo");
+//            break;
+//        case "violet":
+//            alert("Blueberries are violet");
+//            break;
+//        default:
+//            alert("Sorry, " + color + " is not a defined color!");
+//            break;
+//    }
+//}
+
+//console.log(analyzeColor("violet"));
+//console.log(analyzeColor("indigo"));
+
+
 
 /**
  * TODO:
@@ -99,10 +104,12 @@ function analyzeColor(color) {
  * function to show it to the user.
  */
 
-var userInput = prompt ("What's your favorite color?")
+//var userInput = prompt ("What's your favorite color?")
 
- analyzeColor(userInput);
-alert(analyzeColor(userInput));
+// analyzeColor(userInput);
+//alert(analyzeColor(userInput));
+//
+//console.log(analyzeColor(userInput));
 
 
 /* ########################################################################## */
@@ -149,9 +156,11 @@ if (luckyNumber === 0){
 return totalAmount - (totalAmount*discount)
 }
 
-console.log(calculateTotal(2,50));
-console.log(calculateTotal(0,100));
-console.log(calculateTotal(5,200));
+//console.log(calculateTotal(2,50));
+//console.log(calculateTotal(0,100));
+//console.log(calculateTotal(5,200));
+//console.log(calculateTotal(4,100));
+
 
 /**
  * TODO:
@@ -161,12 +170,12 @@ console.log(calculateTotal(5,200));
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-var luckyNumber = Math.floor(Math.random() * 6);
-var totalBill = parseFloat(prompt ("What's your total?"));
-
-alert ("Your lucky number is " + luckyNumber);
-alert ("Your total price is $" + totalBill);
-alert ("Your discounted price is $" + calculateTotal(luckyNumber, totalBill));
+//var luckyNumber = Math.floor(Math.random() * 6);
+//var totalBill = parseFloat(prompt ("What's the amount of your total purchase?"));
+//
+//alert ("Your lucky number is " + luckyNumber);
+//alert ("Your total initial price is $" + totalBill);
+//alert ("Your total after your discount is applied is $" + calculateTotal(luckyNumber, totalBill));
 
 
 /**
@@ -186,5 +195,28 @@ alert ("Your discounted price is $" + calculateTotal(luckyNumber, totalBill));
  * HINT: The way we prompt for a value could be improved
  */
 
+function numberFromUser(){
+    var userInput = parseInt(prompt("Enter number:"));
+    if (isNaN(userInput)){
+        alert ("Sorry, that is not a valid number!");
+        return numberFromUser();
+    } else {
+        return userInput;
+    }
+}
 
+function guestNumber(){
+    var userNumber = confirm ("Would you like to enter a number?");
+if (userNumber){
+    var numberEntered = numberFromUser();
+    if (numberEntered % 2 === 0){
+        alert ("The number is even!");
+    } else {
+        alert ("The number is odd!");
+    }
+    alert ("The number you entered plus a hundred is " + (numberEntered + 100));
+    alert ("The number is " + (numberEntered < 0 ? "negative" : "positive") + ".")
+}
+}
 
+console.log(guestNumber());
