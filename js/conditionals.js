@@ -21,32 +21,21 @@ console.log("Conditional Exercises!");
  * console.logging the function's return value
  */
 
-function analyzeColor (color){
-    color = color.toLowerCase();
+function analyzeColor(color){
     if (color === "red"){
         return "Strawberries are " + color;
     } else if (color === "orange"){
         return "Oranges are " + color;
     } else if (color === "yellow"){
         return "Bananas are " + color;
-    } else if (color === "green"){
-        return "Apples are " + color;
-    } else if (color === "blue"){
-        return color + " is the color of the sky";
-    } else if (color === "indigo"){
-        return "Ken's shoes are " + color;
-    } else if (color === "violet"){
-        return "Blueberries are " + color;
     } else {
-        return "Sorry, " + color + " is not a defined color!"
+        return color + "is not a defined color!";
     }
 }
 
-console.log(analyzeColor("Green"));
-console.log(analyzeColor("BLUE"));
-console.log(analyzeColor("blue"));
-console.log(analyzeColor("aqua"));
-console.log(analyzeColor("violet"));
+console.log(analyzeColor("red"));
+console.log(analyzeColor("Black"));
+
 
 
 // Don't change the next two lines!
@@ -62,7 +51,7 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * You should see a different message every time you refresh the page
  */
 
-analyzeColor("randomColor");
+analyzeColor(randomColor);
 
 console.log(analyzeColor("black"));
 console.log(analyzeColor("blue"));
@@ -74,33 +63,34 @@ console.log(analyzeColor("tan"));
  * Refactor your above function to use a switch-case statement
  */
 
-switch (randomColor){
-   case "red":
-       alert ("Strawberries are red");
-       break;
-   case "orange":
-       alert ("Oranges are orange");
-       break;
-   case "yellow":
-       alert ("Bananas are yellow");
-       break;
-   case "green":
-       alert ("Apples are green");
-       break;
-   case "blue":
-       alert ("blue is the color of the sky");
-       break;
-   case "indigo":
-       alert ("Ken's shoes are indigo");
-       break;
-   case "violet":
-       alert ("Blueberries are violet");
-       break;
-   default:
-       alert ("Sorry, " + randomColor + " is not a defined color!");
-       break;
+function analyzeColor(color) {
+    switch (color) {
+        case "red":
+            alert("Strawberries are red");
+            break;
+        case "orange":
+            alert("Oranges are orange");
+            break;
+        case "yellow":
+            alert("Bananas are yellow");
+            break;
+        case "green":
+            alert("Apples are green");
+            break;
+        case "blue":
+            alert("blue is the color of the sky");
+            break;
+        case "indigo":
+            alert("Ken's shoes are indigo");
+            break;
+        case "violet":
+            alert("Blueberries are violet");
+            break;
+        default:
+            alert("Sorry, " + color + " is not a defined color!");
+            break;
+    }
 }
-
 
 /**
  * TODO:
@@ -137,25 +127,31 @@ alert(analyzeColor(userInput));
  * return value.
  */
 
-var discount = (discount*100);
 
 function calculateTotal(luckyNumber,totalAmount){
-    if (luckyNumber === 0){
-        discount = alert ("Better luck next time; no discount!");
-    } else if (luckyNumber === 1){
-        discount = .1
-    } else if (luckyNumber === 2){
-        discount = .25
-    } else if (luckyNumber === 3){
-        discount = .35
-    } else if (luckyNumber === 4){
-        discount = .50
-    } else if (luckyNumber === 5){
-        discount = alert ("Congrats! It's FREE!!");
-    }
+    var discount;
+if (luckyNumber === 0){
+    discount = 0;
+    alert ("Sorry, unfortunately you do not qualify for a discount!");
+} else if (luckyNumber === 1){
+    discount = .1;
+} else if (luckyNumber === 2){
+    discount = .25;
+} else if (luckyNumber === 3){
+    discount = .35;
+} else if (luckyNumber === 4){
+    discount = .5;
+} else if (luckyNumber === 5){
+    discount = 1;
+    alert ("Congratulations! You're order is FREE!!")
 }
 
+return totalAmount - (totalAmount*discount)
+}
 
+console.log(calculateTotal(2,50));
+console.log(calculateTotal(0,100));
+console.log(calculateTotal(5,200));
 
 /**
  * TODO:
@@ -165,7 +161,13 @@ function calculateTotal(luckyNumber,totalAmount){
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+var luckyNumber = Math.floor(Math.random() * 6);
+var totalBill = parseFloat(prompt ("What's your total?"));
+
+alert ("Your lucky number is " + luckyNumber);
+alert ("Your total price is $" + totalBill);
+alert ("Your discounted price is $" + calculateTotal(luckyNumber, totalBill));
+
 
 /**
  * TODO:
@@ -183,3 +185,6 @@ function calculateTotal(luckyNumber,totalAmount){
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
+
+
