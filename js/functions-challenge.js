@@ -56,12 +56,15 @@ function identity(input){
 console.log(identity("Brianna"));
 console.log(identity("Hudson"));
 
-//**Don't get this?
+//**Need to review this**
 //Write a function called getRandomNumber(min,max) that returns a random number between min and max values sent to that function call.
+function getRandomNumber(min,max){
+    var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    return randomNumber;
+}
+console.log(getRandomNumber(12, 25));
+console.log(getRandomNumber(1, 10));
 
-// function getRandomNumber(min,max){
-//    return randonNumber;
-//}
 
 //Write a function called first(input) that returns the first character in the provided string
 function first(input){
@@ -102,8 +105,15 @@ console.log(reverse("Favorite"));
 console.log(reverse("Codeup"));
 
 //Write a function called isNumeric(input) that takes an input and returns a boolean if the input is numeric.
-//function isNumeric(input){
-//}
+function isNumeric(input){
+    if (isNaN(input) || input === true || input === false){
+        return false;
+    }
+    return true;
+}
+
+console.log(isNumeric(5));
+console.log(isNumeric("abc"));
 
 
 //Write a function called count(input) that takes in a string and returns the number of characters.
