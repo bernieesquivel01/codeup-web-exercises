@@ -57,8 +57,8 @@ for (var x = 1; x <= 10; x++){
 // 88888888
 // 999999999
 
-for (var i = 1; i <= 1; i++){
-    console.log(i+i);
+for (var i = 1; i <= 9; i++){
+    console.log(i.toString().repeat(i));
 }
 
 //Exercise 5; Create a for loop that uses console.log to create the output shown below.
