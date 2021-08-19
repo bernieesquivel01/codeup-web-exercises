@@ -21,7 +21,7 @@ console.log("Conditional Exercises!");
  * console.logging the function's return value
  */
 
-//Example:
+//Example from review:
 function analyzeColor(color){
     var message;
 
@@ -42,7 +42,7 @@ console.log(analyzeColor("red"));
 console.log(analyzeColor("cyan"));
 console.log(analyzeColor("green"));
 
-//Another example; for the same problem;
+//My code; for the same problem;
 //function analyzeColor(color){
 //    if (color === "red"){
 //        return "Strawberries are " + color;
@@ -89,7 +89,7 @@ console.log(analyzeColor(randomColor));
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
-//Another example:
+//Another example from review:
 //function analyzeColor(color){
 //    var message;
 //
@@ -109,7 +109,7 @@ console.log(analyzeColor(randomColor));
 
 //console.log(analyzeColor("blue"));
 
-//OR:
+//My code;
 //function analyzeColor(color) {
 //   switch (color) {
 //       case "red":
