@@ -50,5 +50,15 @@ Math.floor(Math.random() * 5) + 1;
 //Yay! I sold them all! // If there are no more cones
 
 do {
+var conesBought = Math.floor(Math.random() * 5) + 1;
+        console.log("Ice cream man has to sell " + allCones + " cones!");
+        console.log("He just sold " + conesBought + " cones!");
+        allCones = allCones - conesBought;
+    if (allCones < 0){
+        console.log("He can't sell " + conesBought + " , cause he only has " + (allCones+conesBought) + " left!");
+    }
+    if (allCones === 0){
+        console.log ("He's sold out!");
+    }
+}  while(allCones > 0);
 
-}  while();
