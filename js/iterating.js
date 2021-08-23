@@ -36,7 +36,7 @@
      * array.
      */
 
-    for (var i=0; i<names.length; i+=1){
+    for (var i=0; i<names.length; i+=1){//or i++ would also work;
         console.log(names[i]);
     }
 
@@ -48,6 +48,11 @@
     names.forEach (function(name, index, array){
         console.log(name, index, array);
     });
+
+    //Review;
+    //names.forEach(function(arr){
+    //    console.log(arr);
+    //})
 
     /**
      * TODO:
@@ -89,9 +94,4 @@
     }
 
     console.log(last(names));
-
-
-
-
-
 
