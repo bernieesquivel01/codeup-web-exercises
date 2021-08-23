@@ -62,7 +62,7 @@
              console.log("$" + shoppers.amount.toFixed(2) + " is your amount, before discount!");
              console.log("Your discount is $" + (shoppers.amount * .12).toFixed(2));
              console.log("Your discounted price is $" + (shoppers.amount  - shoppers.amount * .12).toFixed(2));
-         } else if (shoppers.amount < 200){
+         } else {
              console.log(shoppers.name);
              console.log("Your total: $" + shoppers.amount.toFixed(2) + " , does not qualify for a discount!");
          }
