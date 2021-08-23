@@ -44,6 +44,16 @@ for (var x = 1; x <= 10; x++){
     }
 }
 
+//Review:
+//function randomNumOddEven(){
+//    for (var i=0; i < 10; i++){
+//        //random formula:
+//        //Math.floor(Math.random() * (max-min)) + min
+//        var randNum = Math.floor(Math.random() * 180) + 20;
+//        var oddOrEven = randNum % 2 == 0 ? "even" : "odd";
+//        console.log(randNum +)
+//    }
+}
 //Exercise 4; Create a for loop that uses console.log to create the output shown below.
 //
 //
@@ -61,6 +71,18 @@ for (var i = 1; i <= 9; i++){
     console.log(i.toString().repeat(i));
 }
 
+//Review:
+//function numTriangle(){
+//    for (var i = 1; i < 10; i++){
+//        var output = "";
+//
+//    for (var j = 0; j < i; j++){
+//        output += i;
+//    }
+//
+//    console.log(output);
+//    }
+//}
 //Exercise 5; Create a for loop that uses console.log to create the output shown below.
 //
 //
@@ -88,3 +110,10 @@ for (var i = 1; i <= 9; i++){
 for (var i = 100; i >= 5; i -=5){//**not including = sign on increment change caused infinite loop!!
     console.log(i);
 }
+
+//Review:
+//function downByFive(){
+//    for (var i = 100; i >= 5; i -=5){
+//        console.log(i);
+//    }
+//}
