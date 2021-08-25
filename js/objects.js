@@ -119,7 +119,7 @@
             }
         },
         {
-            title: "Dragos Love Tacos",
+            title: "Dragons Love Tacos",
             author: {
                 firstName: "Adam",
                 lastName: "Rubin"
@@ -178,13 +178,37 @@
 
     /**
      * Bonus:
-     * - Create a function named `createBook` that accepts a title and author
+     * 1 - Create a function named `createBook` that accepts a title and author
      *   name and returns a book object with the properties described
      *   previously. Refactor your code that creates the books array to instead
      *   use your function.
-     * - Create a function named `showBookInfo` that accepts a book object and
+     * 2 - Create a function named `showBookInfo` that accepts a book object and
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+    //Bonus 1:
+    function createBook(title, authorfirstName, authorlastName) {
+        var book = {};
+        book.title = title;
+        book.author = {};
+        book.author.firstName = authorfirstName;
+        book.author.lastName = authorlastName;
+
+        return book;
+    }
+
+
+    console.log(createBook("Green Eggs and Ham", "Doctor", "Seuss"));
+    console.log(createBook("Grumpy Monkey", "Suzanne", "Long"));
+    console.log(createBook("Dragons Love Tacos", "Adam", "Rubin"));
+
+    //Bonus 2:
+    function showBookInfo(book, i) {//you can leave out i, but won't get "book #"
+        console.log("Book: #" + (i+1));//if you don't include i in the parameters, will be undefined
+        console.log("Title: " + book.title);
+        console.log("Author: " + book.author.firstName + " " + book.author.lastName);
+    }
+
+    books.forEach(showBookInfo);
 
 })();
