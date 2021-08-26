@@ -30,7 +30,7 @@
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
 
-    person.sayHello = function (){
+    person.sayHello = function () {
         return "Hello from " + person.firstName + " " + person.lastName + "!";
     }
 
@@ -197,10 +197,25 @@
         return book;
     }
 
-
     console.log(createBook("Green Eggs and Ham", "Doctor", "Seuss"));
     console.log(createBook("Grumpy Monkey", "Suzanne", "Long"));
     console.log(createBook("Dragons Love Tacos", "Adam", "Rubin"));
+
+    //Instructor Example During Review:
+    // function createBook(title, name){
+        //get name array
+    //    var nameArr = name.split(" ")
+    //    var firstName = nameArr[0]
+    //    var lastName = nameArr[1]
+    //
+    //    return {
+    //        title: title;
+    //        author: {
+    //            firstName: firstName,
+    //            lastName: lastName
+    //        }
+    //    }
+    //}
 
     //Bonus 2:
     function showBookInfo(book, i) {//you can leave out i, but won't get "book #"
