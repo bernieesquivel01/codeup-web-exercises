@@ -19,6 +19,7 @@
         <textarea name="bio"></textarea>
     </label>
 
+    <section>
     <h5>How did you hear about us?</h5>
 
     <input type="radio" id="billboard" name="AboutUs" value="billboard">
@@ -32,22 +33,35 @@
     <br>
     <input type="radio" id="other" name="AboutUs" value="other">
     <label for="other">Other</label>
+    </section>
     <br>
     <br>
+    <section>
     <label for="web browser">What web browser are you using?</label>
     <br>
     <br>
     <label>
         <select name="web browser">
-            <option value="Select">Select One:</option>
+            <option disabled value="Select">--Select One--</option>
             <option value="Chrome">Chrome</option>
             <option value="Safari">Safari</option>
             <option value="Fire Fox">Fire Fox</option>
         </select>
     </label>
+    </section>
     <br>
     <br>
     <input type="submit">
+    <br>
+    <br>
+    <!--BONUS-->
+    <div>
+    <form action="https://www.elformo.com/" method="GET">
+    <label for="free plan">El Formo</label>
+    <input type="text" name="El Formo" id="email" placeholder="Enter Your Email">
+    <button type="submit">Enter</button>
+    </form>
+    </div>
 </form>
 
 </body>
