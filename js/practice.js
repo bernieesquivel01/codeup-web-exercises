@@ -16,14 +16,22 @@
 
 //var number = Math.floor(Math.random() * 6) + 1;
 
-function rollSixSided(num){
+//function rollSixSided(num){
+//
+//    for(var i = 0; i < num; i++) {
+//
+//        var random = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+//
+//        console.log("You rolled a " + random + " on your dice!")
+//    }
+//}
 
-    for(var i = 0; i < num; i++) {
+function tellFortune(jobTitle,location,partner,numKids){
+    var fortune = "You will be " + jobTitle + " in " + location + ", and married to " + partner + " with " + numKids + " kids."
 
-        var random = Math.floor(Math.random() * (6 - 1 + 1) + 1);
-
-        console.log("You rolled a " + random + " on your dice!")
-    }
+    return fortune;
+    //console.log(fortune);
+    //return "You will be a " + jobTitle + " in " + location + ", and married to " + partner + " with " + numKids + " kids."
 }
 
-
+//console.log(tellFortune("developer", "san antonio", "Holly", "5"))
