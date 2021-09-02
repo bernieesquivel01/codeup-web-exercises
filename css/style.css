@@ -1,10 +1,15 @@
 .fancy-header {
-    color: purple;
-    text-decoration: underline;
+    text-align: center; /*centers text*/
 }
 
 .color {
-    color: #4ba5ce
+    color: black;
+    text-decoration: underline;
+}
+
+body { /*changes color of background*/
+    background-image: url("https://images.app.goo.gl/wA3mJZ24ksxHucGd7");
+    background-color: powderblue;
 }
 
 
