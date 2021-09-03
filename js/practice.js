@@ -68,3 +68,15 @@ calculateDogAge(12);
 //}
 //
 //calculateDogAge(3)
+
+//instructor example: including bonus:
+//function calculateDogAge
+//2 parameters: my puppys age and the conversion rate to human years
+//output : return a formatted string
+
+function calculateDogAge(puppyAge, conversionNum){
+    var ageInHumanYears = puppyAge * conversionNum;
+
+    return "Hello there! Your dog is " + ageInHumanYears + " years old. I arrived at that number by multiplying your dogs age of " + puppyAge + " with a converter of " + conversionNum + "."
+}
+
