@@ -8,8 +8,43 @@
 }
 
 body { /*changes color of background*/
-    background-image: url("https://images.app.goo.gl/wA3mJZ24ksxHucGd7");
+    background-image: url("../images.app.goo.gl/wA3mJZ24ksxHucGd7");
     background-color: powderblue;
+    font-family: "Courier New"; /*changes font on desired part of webpage*/
 }
 
+ul {
+    list-style: upper-alpha; /*changes the style of list to specified "style"*/
+}
 
+ol {
+    list-style: upper-alpha;
+}
+
+table { /*puts border around ENTIRE table*/
+    border: 5px black solid;
+}
+
+td, tr, th {
+    border: 1px black solid;
+    padding: 20px;
+    font-size: 12px
+}
+
+a { /*applies these properties to all <a> tags*/
+    color: navy;
+    font-weight: bold;
+
+}
+
+a:visited {
+    color: aliceblue;
+}
+
+a:hover {
+    color: lawngreen;
+}
+
+a:active {
+    color: orangered;
+}
