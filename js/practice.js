@@ -25,6 +25,10 @@
 //        console.log("You rolled a " + random + " on your dice!")
 //    }
 //}
+//Write a function named tellFortune that:
+//    takes 4 arguments: number of children, partner's name, geographic location, job title.
+//outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
+//Call that function 3 times with 3 different values for the arguments.
 
 function tellFortune(jobTitle,location,partner,numKids){
     var fortune = "You will be " + jobTitle + " in " + location + ", and married to " + partner + " with " + numKids + " kids."
@@ -35,3 +39,32 @@ function tellFortune(jobTitle,location,partner,numKids){
 }
 
 //console.log(tellFortune("developer", "san antonio", "Holly", "5"))
+
+//Write a function named calculateDogAge that:
+//takes 1 argument: your puppy's age
+//calculates your dogs age based on the conversion rate of 1 human year to 7 dog years
+//call the function three times with different sets of values;
+
+//Bonus: Add an additional parameter to the function that takes the conversion rate of human to dog years.
+
+function calculateDogAge(age){//dog to human; 1 human year = 7 dog years.
+     var humanYears = age/7;
+    console.log("Your dog is " + humanYears + " years old, in human years!")
+}
+//    return age / 7;
+//}
+//
+//console.log(calculateDogAge(21));
+calculateDogAge(21);
+calculateDogAge(35);
+calculateDogAge(42);
+calculateDogAge(12);
+
+//OR:
+
+//function calculateDogAge(age) { //Human to dog years; 7 dog years = 1 human year
+//    var dogYears = 7*age
+//    console.log("Your dog is " + dogYears + " years old, in dog years!")
+//}
+//
+//calculateDogAge(3)
