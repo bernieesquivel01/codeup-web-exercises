@@ -8,33 +8,39 @@ body, html {
 
 .message {
     width: 80%;
-    border-radius: 10px;
+    border-radius: 10px;/*border-radius targets the corners of the 'table'; in this case it made it round*/
     padding: .5em;
     margin: .5em;
     border: 1px #D3D3D3FF solid;
 }
 
 .message-info {
-    background-color: lightsteelblue;
-    color: #313188FF;
+    background-color: #c6d7f6;
+    color: #37308f;
 
 }
 
 .message-success {
-    background-color: #B3D5C2FF;
-    color: darkgreen;
+    background-color: #c8ebd3;
+    color: #196836;
 
 }
 
 .message-warning {
-    background-color: #bbae7b;
-    color: #A16B46C1;
+    background-color: #f4f2c3;
+    color: #9f8f39;
 
 }
 
 .message-error {
-    background-color: #e81a57;
-    color: #a33078;
+    background-color: #f1cdd0;
+    color: #740a24;
 
 }
 
+/*BONUS*/
+/*:root {
+    --bg-info: #c6d7f6;
+    --text-info: #37308f;
+}*/
+/*creates 'variable' so that you're able to apply changes to everywhere it's used*/
