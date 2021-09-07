@@ -23,7 +23,7 @@ fieldset {
     box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     padding: 1em;
     /* There must be 1em between the content and the border of this element */
-    border: none;
+    border: 0;
     /* It should have no border */
     background-color: white;
     /* Its background should be white */
@@ -33,7 +33,7 @@ fieldset {
     /* The element with this class should 80% of the width and it must be centered */
     width: 80%;
     /* Read how to center elements with margin here: http://learnlayout.com/margin-auto.html*/
-    margin: 0 auto;
+    margin: 0 auto; /* 0 will center from top to bottom, 'auto' centers left to right.*/
 }
 
 
@@ -42,7 +42,7 @@ fieldset {
     width: 100%;
     /* It should have a separation of .5em from elements on top of it and below it*/
     margin-top: .5em;
-    margin-bottom: .5em;
+    margin-bottom: .5em;/* or margin: .5em 0; would be the same as '-top' and '-bottom'*/
 }
 
 .form-label {
@@ -68,14 +68,16 @@ fieldset {
 
 .form-control {
     /* There must be 4px on top of the text and below the text of an input with this class */
-    padding-top: 4px;
+    padding-top: 4px; /* or padding: 4px 0; would've worked as well for both '-top' and '-bottom'*/
     padding-bottom: 4px;
     /* It should have a separation of .5em from elements on top of it and below it */
-    margin-top: .5em;
+    margin-top: .5em;/*or margin: .5em 0; would've worked for '-top' and '-bottom'*/
     margin-bottom: .5em;
     /* You'll need to use the `calc` function to make the width of this element match the width of the button */
     /* See the example at: https://developer.mozilla.org/en-US/docs/Web/CSS/calc */
     /* HINT: Calculate based on the padding of the `.btn` class */
     /* HINT: Examples are available at: https://glitch.com/~input-button-width */
-    width: calc(100% - 4px);
+    width: calc(100% - 4px);/* when using calc(); spacing between the () is crucial*/
+    border: 1px solid lightgray;
+
 }
