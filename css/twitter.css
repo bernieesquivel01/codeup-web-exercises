@@ -33,7 +33,7 @@ a {
     background: var(--light-bg);
     position: fixed;
     width: 100%;
-    z-index: 100; /*avatar was moving in front of navigation bar when scrolling, adding z-index helped avatar move behind nav bar*/
+    z-index: 1000; /*avatar was moving in front of navigation bar when scrolling, adding z-index helped avatar move behind nav bar*/
 }
 
 .nav {
@@ -68,13 +68,13 @@ a {
 }
 
 .profile-form {
-    line-height: 80px;
+    line-height: 80px;/*automatically centers because it matches 'profile' px*/
 }
 
 .profile-details {
     float: left;
     width: calc(25% - 1em);
-    margin: .5em;
+    margin: 0 0.5em;/*first number is left to right, second number is top to bottom*/
 }
 
 .profile-items {
@@ -83,7 +83,7 @@ a {
 }
 
 .profile-entry {
-    margin: .5em;
+    margin: 0 0.5em;
 }
 
 .timeline {
@@ -95,18 +95,18 @@ a {
 .who-to-follow {
     float: left;
     width: calc(25% - 1em);
-    margin: .5em;
+    margin: 0 0.5em;
 }
 
 .container {
-    margin: 2em;
+    margin-top: 2em;
 }
 
 .media {
     width: 100%;
     background-color: var(--light-bg);
     border-bottom: 1px solid var(--separator-color);
-    padding: .5em;
+    padding: 0.5em;
     overflow: auto;
 }
 
