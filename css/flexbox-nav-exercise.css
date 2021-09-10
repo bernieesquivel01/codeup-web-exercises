@@ -3,14 +3,24 @@
     color: black;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
+html, body {
+    font-family: 'Work Sans', sans-serif;
     margin: 0;
 }
 
 nav  {
     height: 50px;
     background: grey;
+}
+
+nav.container {
+    display: flex;
+    background-color:;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+
 }
 
 nav ul {
@@ -20,22 +30,25 @@ nav ul {
 }
 
 
-nav a {
+a {
     display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 1.8em .5em;
 }
 
-nav a:hover {
+a:hover {
     color: blue;
 }
 
-.nav-logo {
-    font-size: 3em;
-    margin: auto;
-    height: inherit;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.nav-container li:nth-of-type(4) {
+    margin-right: auto;
+}
 
+
+logo.container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
 }
