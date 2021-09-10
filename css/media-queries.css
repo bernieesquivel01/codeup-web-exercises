@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width:339px) {
+    body {
+        background-color: white;
+        color: black;
+        width: 100%
+    }
+    .alert-info {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-color: #97e3e5;
+        border: 1px solid lightgrey;
+        height: 30px;
+        padding: inherit;
+        margin: .5em .5em;
+    }
+    .alert-info a {
+        text-decoration: none;
+        color: black;
+        margin: auto;
+        padding: inherit;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        display: flex;
+        justify-content: auto;
+        margin-bottom: .5em;
+        height: auto;
+        padding: inherit;
+    }
+
+    .nav-links li {
+        display: flex;
+        justify-content: center;
+        background-color: lightgrey;
+        border: 1px solid lightgrey;
+        border-spacing: 5px;
+        margin: .5em .5em;
+        height: 40px;
+        color: blue;
+        align-items: center;
+    }
+    img {
+        width: 100%;
+        margin: .5em .5em;
+    }
+    .header-img {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: .5em .5em;
+    }
+    h2 {
+        margin-bottom: .5em;
+    }
+    .main {
+        margin: .5em .5em;
+    }
+    .sub-section {
+        font-style: italic;
+        margin: 2em .5em;
+    }
+    footer p {
+        position: absolute;
+        bottom: 0;
+    }
+    .social-media-links {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 1em;
+    }
+    .alert-info {
+        display: none;
+    }
+    h1 {
+        text-align: left;
+        display: flex;
+        justify-content: left;
+        margin-top: .5em;
+    }
+    .nav-links {
+        flex-direction: row;
+        margin-top: 1em;
+    }
+    .nav-links ul {
+        position: absolute;
+    }
+    .nav-links li {
+        background-color: white;
+        border: none;
+    }
+    img {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .header-img {
+        padding: 0;
+        margin: 0;
+    }
+    h2 {
+        margin-top: 1.5em;
+    }
+    .main {
+        margin-right: 1em;
+    }
+    .sub-section {
+        font-style: italic;
+        margin-right: 1em;
+    }
+    footer p {
+        position: absolute;
+        bottom: 0;
+    }
+    .social-media-links {
+        position: absolute;
+        bottom: 0;
+    }
+}
