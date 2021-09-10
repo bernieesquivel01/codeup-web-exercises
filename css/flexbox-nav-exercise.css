@@ -1,0 +1,41 @@
+* { /*applies to all elements*/
+    box-sizing: border-box;
+    color: black;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+nav  {
+    height: 50px;
+    background: grey;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+
+nav a {
+    display: inline-block;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+.nav-logo {
+    font-size: 3em;
+    margin: auto;
+    height: inherit;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
