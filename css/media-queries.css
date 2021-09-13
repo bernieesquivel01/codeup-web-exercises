@@ -72,13 +72,11 @@
         font-style: italic;
         margin: 2em .5em;
     }
-    .footer {
+    footer {
         position: absolute;
         bottom: 0;
         left: 0;
-        right: 0;
-        height:100px;
-        background:#ccc;
+        margin: 0.5em 0.5em;
     }
     .social-media-links {
         position: absolute;
@@ -87,6 +85,9 @@
 }
 
 @media screen and (min-width:1200px) {
+    .hidden-on-desktop {
+        display: none;
+    }
     body {
         display: flex;
         flex-direction: column;
@@ -133,15 +134,17 @@
         clear: both;
     }
     .main {
-        margin-right: 1em;
-        width:50%;
+        flex-basis: 60% 40%;
         float: left;
     }
-    .sub-section p {
+    .sub-section {
         font-style: italic;
-        margin-right: 1em;
-        width: 50%;
-        float: left;
+        float: right;
+    }
+    .footer {
+        position: relative;
+        bottom: 0;
+        right: 0;
     }
     .social-media-links {
         position: absolute;
