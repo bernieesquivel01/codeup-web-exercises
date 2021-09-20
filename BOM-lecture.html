@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // //Example1://
+    // let count = 0;
+    //
+    // function showTime(){
+    //
+    //     //return new date and time:
+    //     let dateTime = new Date();
+    //
+    //     //return the time:
+    //     let time = dateTime.toLocaleTimeString();
+    //
+    //     count += 1;
+    //
+    //     //if the count reaches 5, stop the process:
+    //     if(count >= 5) {
+    //         console.log("the last time")
+    //         clearInterval(display);
+    //     }
+    //     console.log(time)
+    // }
+    //
+    // let display = setInterval(showTime, 5000);
+    // console.log(display);
+
+    //example of setTimeout:
+    function greeting(){
+        console.log("Hello World!")
+    }
+
+    var delayedgreeting = window.setTimeout(greeting, 3000);//3k represents time delay.
+
+    //clearing/cancelling setTimeout;
+    window.clearTimeout(delayedgreeting);
+
+</script>
+</body>
+</html>
+
+
+<!--Example1:-->
+<!--//TODO: Finish coding this program. You need to stop the setInterval() method after the showTime() function has run five times-->
+<!--let count = 0;-->
+
+<!--function showTime() {-->
+
+<!--// return new date and time-->
+<!--let dateTime = new Date();-->
+
+<!--// return the time-->
+<!--let time = dateTime.toLocaleTimeString();-->
+
+<!--count += 1;-->
+
+<!--//if the count reaches 5, stop the program.-->
+
+<!--console.log(time)-->
+<!--}-->
+
+<!--let display = setInterval(showTime, 5000);-->
