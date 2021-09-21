@@ -46,10 +46,23 @@
         console.log(listItems);
 
         // TODO: Set text color on every other list item to grey
+        var odd = document.getElementsByClassName("odd");
+        var even = document.getElementsByClassName("even");
+
+        for (var i = 0; i < listItems.length; i++){
+            if (i % 2 !== 0) {
+                listItems[i].setAttribute("class", "even")
+            } else {
+                listItems[i].setAttribute("class", "odd")
+            }
+        }
+
+        for (var i = 0; i < odd.length; i++){
+            odd[i].style.color = "grey";
+        }
+
         // TODO: Set text color of li with dbid = 1 to blue
-        listItems[0].style.color = "blue";
-        listItems[2].style.color = "grey";
-        listItems[4].style.color = "grey";
+
 
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
@@ -58,6 +71,8 @@
 
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+        subParagraphs[0].innerText="Mission Accomplished!";
+
     })();
 </script>
 
