@@ -46,22 +46,44 @@
         console.log(listItems);
 
         // TODO: Set text color on every other list item to grey
-        var odd = document.getElementsByClassName("odd");
-        var even = document.getElementsByClassName("even");
+        // var odd = document.getElementsByClassName("odd");
+        // var even = document.getElementsByClassName("even");
+        //
+        // for (var i = 0; i < listItems.length; i++){
+        //     if (i % 2 !== 0) {
+        //         listItems[i].setAttribute("class", "even")
+        //     } else {
+        //         listItems[i].setAttribute("class", "odd")
+        //     }
+        // }
+        //
+        // for (var i = 0; i < odd.length; i++){
+        //     odd[i].style.color = "grey";
+        // }
 
-        for (var i = 0; i < listItems.length; i++){
-            if (i % 2 !== 0) {
-                listItems[i].setAttribute("class", "even")
-            } else {
-                listItems[i].setAttribute("class", "odd")
-            }
-        }
-
-        for (var i = 0; i < odd.length; i++){
-            odd[i].style.color = "grey";
+        for (var i = 0; i < listItems.length; i += 2){
+            listItems[i].style.color = "grey";
         }
 
         // TODO: Set text color of li with dbid = 1 to blue
+
+        // var dbid1 = document.getElementsByTagName('li')[0];
+        // dbid1.style.color = "blue";
+
+        //OR:
+
+        // Array.prototype.forEach.call(listItems, function(listItem){
+        //     if (listItem.getAttribute("data-dbid") === "1"){
+        //         listItem.style.color = "blue";
+        //     }
+        // })
+
+        //OR:
+        // for (var i = 0; i < listItems.length; i++){
+        //     if(listItems[i].getAttribute('data-dbid') === "1"){
+        //         listItems[i].style.color = "blue";
+        //     }
+        // }
 
 
 
