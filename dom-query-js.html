@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+<head>
     <meta charset="UTF-8">
     <title>DOM: Query and Modify</title>
 </head>
 <body>
 
-<h1 id="main-header">Hello World!</h1><button id="JavaScriptButton">Click Me!</button>
+<h1 id="main-header">Hello World!</h1>
+<button id="JavaScriptButton">Click Me!</button>
 <ul>
     <li data-dbid="1">Item 1</li>
     <li data-dbid="2">Item 2</li>
@@ -13,7 +15,10 @@
     <li data-dbid="4">Item 4</li>
     <li data-dbid="5">Item 5</li>
 </ul>
-<h2 id="sub-header">Hello Again.</h2><button id="oldBlue">Just Click the Button!</button>
+<button id="grey">Touch of Grey!</button>
+<button id="ItemOne">Turn Blue!</button>
+<h2 id="sub-header">Hello Again.</h2>
+<button id="oldBlue">You're My Boy Blue!</button>
 <p class="sub-paragraph">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -22,10 +27,11 @@
     reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
-</p><button id="MissionAccomplished">Try Me!</button>
+</p>
+<button id="MissionAccomplished">Try Me!</button>
 
 <script>
-    (function() {
+    (function () {
         "use strict";
         //dom-query-js exercise:
         // TODO: Uncomment next line and get the main header element by id
@@ -87,7 +93,6 @@
         // }
 
 
-
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
         var subParagraphs = document.getElementsByClassName("sub-paragraph");
         // console.log(subParagraphs);
@@ -98,23 +103,38 @@
 
         //DOM EVENTS Exercise:
         //Button 1:
-        var CoolJS = function (){
+        var CoolJS = function () {
             return mainHeader.innerHTML = "<em> Javascript is Cool </em>";
         }
         document.getElementById("JavaScriptButton").addEventListener("click", CoolJS);
 
+        //Button 2 and 2a:
+        var greyList = function () {
+            for (var i = 0; i < listItems.length; i += 2) {
+                listItems[i].style.color = "grey";
+            }
+        }
+        document.getElementById("grey").addEventListener("click", greyList);
 
-
+        //Button 2a:
+        var blueItemOne = function () {
+            for (var i = 0; i < listItems.length; i++) {
+                if (listItems[i].getAttribute('data-dbid') === "1") {
+                    listItems[i].style.color = "blue";
+                }
+            }
+        }
+        document.getElementById("ItemOne").addEventListener("click", blueItemOne);
 
         //Button 3:
-        var youreBlue = function (){
+        var youreBlue = function () {
             return subHeader.style.color = "blue"
         }
         document.getElementById("oldBlue").addEventListener("click", youreBlue);
 
         //Button 4:
-        var mission = function (){
-            return subParagraphs[0].innerText="Mission Accomplished!";
+        var mission = function () {
+            return subParagraphs[0].innerText = "Mission Accomplished!";
         }
         document.getElementById("MissionAccomplished").addEventListener("click", mission);
     })();
