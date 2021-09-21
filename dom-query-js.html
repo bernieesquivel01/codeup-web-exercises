@@ -30,6 +30,12 @@
 </p>
 <button id="MissionAccomplished">Try Me!</button>
 
+<!--//Instructor Example:-->
+<!--<button id="btn1">Click Me!</button>-->
+<!--<button id="btn2">Click Me!</button>-->
+<!--<button id="btn3">Click Me!</button>-->
+<!--<button id="btn4">Click Me!</button>-->
+
 <script>
     (function () {
         "use strict";
@@ -108,6 +114,14 @@
         }
         document.getElementById("JavaScriptButton").addEventListener("click", CoolJS);
 
+        // //Instructor Example 1:
+        // var coolJava = function (event){
+        //     mainHeader.innerHTML = "<em> Javascript is Cool </em>";
+        // }
+        // document.getElementById("JavaScriptButton").addEventListener("click", coolJava);
+        //
+        //}
+
         //Button 2 and 2a:
         var greyList = function () {
             for (var i = 0; i < listItems.length; i += 2) {
@@ -137,6 +151,15 @@
             return subParagraphs[0].innerText = "Mission Accomplished!";
         }
         document.getElementById("MissionAccomplished").addEventListener("click", mission);
+
+        // Instructor Example 4:
+        // var subChange = function (event){
+        //     subParagraphs[0].innerText = "Mission Accomplished!";
+        // }
+        //
+        // document.getElementById("btn4").addEventListener("click", subChange);
+
+
     })();
 </script>
 
