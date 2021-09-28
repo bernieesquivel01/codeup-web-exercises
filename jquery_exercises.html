@@ -27,11 +27,26 @@
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script> src="js/jquery_exercises.js"</script>
+<!--<script> src="js/jquery_exercises.js"</script>-->
 </body>
 
 
 <script>
+    $("#main-heading").click (function() {
+        $(this).css ("background-color", "orange");
+    });
+
+    $('p').dblclick (function(e) {
+        $(this).css ("font-size", "18px");
+    });
+
+    $("li").hover (function() {
+            $(this).css('color', "red");
+        },
+        function() {
+            $(this).css('color', "black");
+        }
+    );
 
     //alert; prior to page loading
     // $(document).ready(function() {
@@ -39,17 +54,17 @@
     // });
 
 
-    //Example of Class Selector
-    $(".num-list").css("background-color", "yellow").css("margin", "2px").html("Hello!")
-
-    //Examples of Element Selector
-    $("p").css("font-size", "30px");
-
-    //Using multiple selectors, seperate by comma;
-    $("p, .num-list").css("font-size", "30px");
-
-    //all selector, selects all elements on a page:
-    $("*").css("border", "1px solid red").css("padding", "10px").css("margin", "5px");
+    // //Example of Class Selector
+    // $(".num-list").css("background-color", "yellow").css("margin", "2px").html("Hello!")
+    //
+    // //Examples of Element Selector
+    // $("p").css("font-size", "30px");
+    //
+    // //Using multiple selectors, seperate by comma;
+    // $("p, .num-list").css("font-size", "30px");
+    //
+    // //all selector, selects all elements on a page:
+    // $("*").css("border", "1px solid red").css("padding", "10px").css("margin", "5px");
 
 </script>
 
