@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery Selectors</title>
+</head>
+<body>
+<div>
+    <h1 id="main-heading">Welcome!!</h1>
+    <h2 id="codeup">Hello Codeup</h2>
+    <p class="work-block">Loreafdafdsa lkj afda lkj afdldkj afdafdlk lkj laj fd</p>
+    <ul id="full-list">
+        <li class="num-list">One</li>
+        <li class="num-list">Two</li>
+        <li class="num-list">Three</li>
+    </ul>
+    <p class="work-block">afdafdl lkfads lakdf lkjadfl liu fda, klja dfd fadlk afdafd  afdlkj </p>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+
+    var mainHeading = document.getElementById("main-heading");
+    mainHeading.style.color = "blue";
+
+
+    // jQuery("selector") example of Id Selector
+    $("#codeup").css("color", "blue");
+
+    //Example of Class Selector
+    $(".num-list").css("background-color", "yellow").css("margin", "2px").html("Hello!")
+
+    //Examples of Element Selector
+    $("p").css("font-size", "30px");
+
+    //Using multiple selectors, seperate by comma;
+    $("p, .num-list").css("font-size", "30px");
+
+    //all selector, selects all elements on a page:
+    $("*").css("border", "1px solid red").css("padding", "10px").css("margin", "5px");
+
+</script>
+</body>
+</html>
