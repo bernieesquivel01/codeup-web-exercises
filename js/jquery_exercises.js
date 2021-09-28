@@ -1,10 +1,6 @@
 "use strict";
 
-// $(document).ready(function() {
-//
-//     alert ("Document ready - Javascript is ready to rock and roll!");
-// });
+// var contents = $(".work-block").html();
+// alert(contents);
 
-$(document).ready(function(){
-    alert( "The DOM has finished loading!" );
-});
+$(".work-block").css("border", "1px solid red")

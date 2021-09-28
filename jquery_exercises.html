@@ -5,10 +5,52 @@
     <title>Title</title>
 </head>
 <body>
+<div>
+    <h1 id="main-heading">Welcome!!</h1>
+    <h2 id="codeup">Hello Codeup</h2>
+    <p class="work-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.</p>
+    <ul id="full-list">
+        <li class="num-list">One</li>
+        <li class="num-list">Two</li>
+        <li class="num-list">Three</li>
+    </ul>
+    <p class="work-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.</p>
+</div>
 
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script> src="js/jquery_exercises.js"</script>
 </body>
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<!--<script> src="js/jquery_exercises.js"</script>-->
+
+<script>
+
+    //alert; prior to page loading
+    // $(document).ready(function() {
+    //     alert( 'The webpage has finished loading!' );
+    // });
+
+
+    //Example of Class Selector
+    $(".num-list").css("background-color", "yellow").css("margin", "2px").html("Hello!")
+
+    //Examples of Element Selector
+    $("p").css("font-size", "30px");
+
+    //Using multiple selectors, seperate by comma;
+    $("p, .num-list").css("font-size", "30px");
+
+    //all selector, selects all elements on a page:
+    $("*").css("border", "1px solid red").css("padding", "10px").css("margin", "5px");
+
+</script>
 
 </html>
