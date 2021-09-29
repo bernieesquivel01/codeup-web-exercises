@@ -35,6 +35,10 @@
     $("#main-heading").click (function() {
         $(this).css ("background-color", "orange");
     });
+    //another example:
+    // $("h1").click(function(){
+    //     $("h1").css("background-color", "blue");
+    // })
 
     $('p').dblclick (function(e) {
         $(this).css ("font-size", "18px");
@@ -43,6 +47,7 @@
     $("li").hover (function() {
             $(this).css('color', "red");
         },
+        //without this second function the text would stay red, and not turn back to black.
         function() {
             $(this).css('color', "black");
         }
