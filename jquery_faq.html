@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+
+    <!-- Bootstrap CSS -->
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+
     <title>Title</title>
     <link rel="stylesheet" href="css/jquery_faq.css">
     <script src="https://code.jquery.com/jquery-2.2.4.js"
@@ -34,9 +39,8 @@
                 for
                 the
                 price. The type of service and the level of entertainment you will experience on a Walt Disney World
-                vacation—for everyone in your family from age 1-99, no matter what they are interested in—is world class
-                and
-                second to none.
+                vacation—for everyone in your family from age 1-99, no matter what they are interested in—is world-class
+                and second to none.
             </dd>
             <dt>How many days should I go?</dt>
             <dd class="invisible">
@@ -295,6 +299,39 @@
 
         <button id="highlightListItem">Highlight the Last Fact</button>
     </div>
+
+    <!--    Bonus    -->
+    <div class="row">
+<!--        <div class="column">-->
+            <img src="img/images/animalkingdom.jpeg" alt="animal kingdom" style="width:33%; height:25%"/>
+        </div>
+<!--        <div class="column">-->
+            <img src="img/images/images.jpeg" alt="hollywood studios" style="width:33%; height:25%"/>
+        </div>
+<!--        <div class="column">-->
+            <img src="img/images/magickingdom.jpeg" alt="magic kingdom" style="width:33%; height:40%"/>
+        </div>
+    </div>
+    <!--    <div class="row">-->
+    <!--        <div class="col-md-4">-->
+    <!--            <div class="pictureOne"></div>-->
+    <!--            <img src="img/images/images.jpeg" height="183" width="275"/>-->
+    <!--            <button id="leftPic">Click Here</button>-->
+    <!--        </div>-->
+    <!--        <div class="col-md-4">-->
+    <!--            <div class="pictureTwo"></div>-->
+    <!--            <img  src ="img/images/animalkingdom.jpeg" height="183" width="275" alt="animal kingdom">-->
+    <!--            <button id="centerPic">Click Here</button>-->
+    <!--        </div>-->
+    <!--        <div class="col-md-4">-->
+    <!--            <div class="pictureThree"></div>-->
+    <!--            <img class="col-md-4" src="img/images/magickingdom.jpeg" height="183" width="275"/>-->
+    <!--            <button id="rightPic">Click Here</button>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    </div>
+
+
 </main>
 <script>
 
@@ -318,16 +355,28 @@
             });
         });
 
+        //$("#higlightListItem").click(function(event){
+        // event.preventDefault();
+        // $("ul").each(function(){
+        //     $(this).children().last().css('background-color', 'yellow')
+        // })
+
+
         //When any h3 is clicked, li's underneath will be bold
-        $("h3").click(function () {
+        $("h3").click(function (event) {
+            event.preventDefault();
             $(this).next().children().css("font-weight", "bold");
         });
 
         //first li turn blue, when clicking any li in the ul
-        $("li").click(function(){
-            $(this).parent().children().first().css ("color", "blue");
+        $("li").click(function () {
+            $(this).parent().children().first().css("color", "blue");
         });
 
+        // $("li").click(function (event) {
+        //     event.preventDefault();
+        //     $(this).parent().children().first().css("color", "blue");
+        // });
     });
 
 
