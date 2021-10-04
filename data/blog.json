@@ -16,15 +16,5 @@
             "sugar"
         ],
         "date": "February 14, 2015"
-    }, {
-        "title": "The Third Post",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci, cupiditate deleniti et fuga fugit maiores minus molestiae nesciunt optio quaerat tenetur! Aperiam et fugiat maxime molestias optio? Assumenda, ut!"
-        "categories": [
-            "nike",
-            "sneakers",
-            "Jordan 1",
-            "shoes"
-        ],
-        "date": "October 4, 2021"
     }
 ]
