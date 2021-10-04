@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax Blog</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<div id="posts">
+
+
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<script>
+
+    $(document).ready (function(e){
+        $.get("data/blog.json", function(data) {
+            var html = "";
+            $.each(data, function(index) {
+
+                html += "<h1>" + data[index].title + "</h1>";
+                html += "<p>" + data[index].content + "</p>";
+                html += "<h3>" + data[index].categories + "</h3>";
+                html += "<em>" + data[index].date + "</em>";
+
+            });
+            $("#posts").append(html);
+        });
+    });
+
+</script>
+</body>
+</html>

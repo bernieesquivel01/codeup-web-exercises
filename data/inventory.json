@@ -30,5 +30,19 @@
             "tool"
         ],
         "price": 10
+    }, {
+        "title": "Hard Hat",
+        "quantity": 5,
+        "categories": [
+            "apparel"
+        ],
+        "price": 10
+    }, {
+        "title": "Tool Belt",
+        "quantity": 10,
+        "categories": [
+            "apparel"
+        ],
+        "price": 15
     }
 ]
