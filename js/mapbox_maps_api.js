@@ -49,6 +49,19 @@ var restaurants = [
     }
 ];
 
-function bostonRestaurants (restaurants, mapBoston, mapboxApiKey){
+restaurants.forEach(function(input){
+    geocode(input.location, mapboxApiKey).then(function(result) {
+        mapBoston.setCenter(result);
+        var popup = new mapboxgl.Popup()
+            .setHTML(restaurants.address + restaurants.type);
 
-}
+        var marker = new mapboxgl.Marker()
+            .setLngLat(result)
+            .addTo (mapBoston)
+
+        marker.setPopup(popup)
+    })
+})
+
+
+// $( "#myselect option:selected" ).text();
