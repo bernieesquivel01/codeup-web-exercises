@@ -16,5 +16,15 @@
             "sugar"
         ],
         "date": "February 14, 2015"
+    }, {
+    "title": "Sneaker Post",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur, consequuntur dignissimos eum fugit, illum inventore laboriosam magnam necessitatibus nisi odit placeat rem repellat sequi sit vel vero voluptates voluptatibus.",
+    "categories": [
+        "sneakers",
+        "nike",
+        "jordan 1",
+        "kicks"
+    ],
+    "date": "February 14, 2015"
     }
 ]
