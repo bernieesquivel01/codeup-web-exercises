@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
 
-    <!-- links css stylesheet -->
-    <link rel="stylesheet" href="css/weather_map.css">
+
     <meta charset="UTF-8">
     <title>Weather Map Launch</title>
+
+    <!-- links css stylesheet -->
+    <link rel="stylesheet" href="css/weather_map.css">
 </head>
 <body>
+
 
 
 
@@ -18,17 +21,9 @@
 <!-- attaches the key.js file, which contains API key -->
 <script src="keys.js"></script>
 
-<script>
-
-$.get("http://api.openweathermap.org/data/2.5/forecast", {
-    APPID: openWeatherKey, //API key variable, from keys.js
-    q:     "San Antonio, US",
-    units: "imperial"
-}).done(function(data) {
-    console.log('5 day forecast', data);
-});
+<!-- attaches the weather_map.js to html -->
+<script src="js/weather_map.js"></script>
 
 
-</script>
 </body>
 </html>
