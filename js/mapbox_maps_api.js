@@ -10,14 +10,14 @@ var mapBoston = new mapboxgl.Map (
     {
         container: "map",
         style: "mapbox://styles/mapbox/streets-v11",
-        center: [-71.081495, 42.349071],
+        center: [-98.4895, 29.4267],
         zoom: 15,
     }
 );
 
 // created marker
 const marker = new mapboxgl.Marker({color: "red"})
-    .setLngLat([-71.081495, 42.349071])
+    .setLngLat([-98.4895, 29.4267])
     .setPopup(new mapboxgl.Popup().setHTML("<p>Atlantic Fish Company</p>"))
     .addTo(mapBoston)
 
