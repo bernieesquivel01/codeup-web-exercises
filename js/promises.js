@@ -16,7 +16,20 @@ console.log(lastCommit('bernieesquivel01'));
 //BONUS:
 
 function wait(number) {
+    return new Promise((resolve, reject)=>{
+        setTimeout(()=> {
+            resolve(number), number;
+    })
+    )
+});
 
-    wait(1000).then(() => console.log('You\'ll see this after 1 second'));
-    wait(3000).then(() => console.log('You\'ll see this after 3 seconds'));
-}
+// const wait = (number) => {
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             resolve();
+//         }, 0)
+//     })
+// }
+
+wait(1000).then(() => console.log('You\'ll see this after 1 second'));
+wait(3000).then(() => console.log('You\'ll see this after 3 seconds'));
