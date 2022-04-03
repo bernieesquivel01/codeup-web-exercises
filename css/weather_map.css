@@ -11,15 +11,16 @@ main {
 }
 
 .column {
-    float: left;
+    /*float: left;*/
     width: 20%;
-    padding: 2px 2px;
+    padding: 10px 10px;
 }
 
 #fivedayWeather {
-    width: 500px;
-    margin: auto;
+    /*width: 800px;*/
+    margin: 20px;
 }
+
 .card {
     height: 175px;
     text-align: center;
