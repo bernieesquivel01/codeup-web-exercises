@@ -1,13 +1,40 @@
 
 main {
-
     background-color: #3e5db9;
+    height: auto;
+}
+
+#currentWeather{
+    margin: 20px;
+    align-self: center;
+    width: 100%;
 }
 
 #day0 {
+    margin: 20px;
+    align-items: center;
     height: 150px;
     width: 500px;
+}
 
+#day1 {
+    padding-top: 10px;
+}
+
+#day2 {
+    padding-top: 10px;
+}
+
+#day3 {
+    padding-top: 10px;
+}
+
+#day4 {
+    padding-top: 10px;
+}
+
+#day5 {
+    padding-top: 10px;
 }
 
 .column {
@@ -19,16 +46,17 @@ main {
 #fivedayWeather {
     /*width: 800px;*/
     margin: 20px;
+    padding-top: 10px;
 }
 
 .card {
-    height: 175px;
+    height: 150px;
     text-align: center;
     background-color: #1ebcf2;
     color: white;
     /*align-items: center;*/
     border-radius: 10px;
-
+    border: white solid 5px;
 }
 
 #map {
@@ -37,10 +65,4 @@ main {
     border-radius: 20px;
     margin: 20px;
 
-}
-
-@media only screen and (min-width : 768px) {
-    /*.container {*/
-    /*    column-count: 4;*/
-    /*}*/
 }
