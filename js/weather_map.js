@@ -67,6 +67,8 @@ function hourlyConverter (dtNum) {
                 + "</b>" + "<br>").append("Temp: "
                 + data.daily[i].temp.day);
         }
+
+
     }
 
     //     dailyWeather += "<div>";
